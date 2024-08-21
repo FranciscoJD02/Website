@@ -1,0 +1,451 @@
+/* Estilos predefinidos */
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.c1 {
+    color: #3ea2d8;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, strong, a, label {
+    font-family: sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.iluminacion {
+    position: relative;
+    width: 600px;
+    height: 200px;
+}
+
+.iluminacion span { 
+    position: absolute;
+    font-size: 150px;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50% );
+}
+
+.iluminacion :last-child {
+    filter: blur(6px);
+}
+
+.btn {
+    background: white;
+    border: 0;
+    padding: 10px 48px;
+    font-size: 28px;
+    text-transform: uppercase;
+    border-radius: 22px;
+    font-weight: bold;
+    color: #3ea2d8;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* 100/12 -> (resultado) x numero de columnas */
+.col-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.offset-10 {
+    margin-left: 83.33333%;
+}
+
+.offset-8 {
+    margin-left: 66.666667%;
+}
+
+.m0 {
+margin: 0 !important;
+}
+
+.pd0 {
+    padding: 0 !important;
+}
+
+/* Estilos del navegation top */
+
+#navegation-top {
+    background-color: #020202;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 1;
+}
+
+#navegation-top .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+#logo img {
+    display: block;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: #3ea2d8;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 28px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+nav ul li a:hover {
+    background-color: #3ea2d8;
+    color: black;
+    font-weight: bold;
+} 
+
+/* Estilos del header */
+
+header {
+    height: 600px;
+    background: url("../img/bg-header.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+.info-header {
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-header p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+/* 
+Sección who
+*/
+
+#who {
+    background-color: black;
+    padding: 90px 0 ;
+}
+
+#who p {
+    line-height: 28px;
+}
+
+/* 
+Sección we
+*/
+
+#we {
+    padding: 90px;
+    background-color: #141414;
+    color: white;
+}
+
+
+/* 
+Sección Priorities
+*/
+
+#priorities {
+    background: url(../img/bg-priorities.jpg);
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 700px;
+}
+
+.caja-priori {
+    background-color: rgba( 39, 39, 39, 0.62 );
+    color: white;
+    padding: 15px 40px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* 
+Sección wHAT
+*/
+
+#what {
+    background-color: #000;
+    padding: 90px 0;
+}
+
+.caja-what {
+    color: white;
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*
+Seccion Mensaje
+*/
+
+#mensaje1 {
+    background-color: #141414;
+    padding: 90px 0;
+}
+
+#mensaje1 p {
+    font-size: 22px;
+}
+#mensaje2 {
+    background-color: black;
+    padding: 90px 0;
+}
+
+#mensaje2 p {
+    font-size: 22px;
+}
+
+/* 
+Sección Nature
+*/
+
+#nature {
+    background-color: #000;
+}
+
+#nature img {
+    width: 100%;
+    display: block;
+}
+
+.info-nature {
+    padding-left: 160px;
+    padding-right: 110px;
+    padding-top: 220px;
+}
+
+.info-nature p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+.info-nature h2 {
+    font-size: 40px;
+}
+
+/*
+Sección Ticket
+*/
+
+#ticket {
+    background: url(../img/bg-buy.jpg);
+    height: 800px;
+    background-size: cover;
+}
+
+.info-tickets {
+    color: white;
+    padding-top: 200px;
+}
+
+.info-tickets h2 {
+    font-size: 60px;
+}
+
+.info-tickets button {
+    margin-top: 30px;
+}
+
+#fechas {
+    background-color: #141414;
+    color: white;
+    padding: 90px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*
+Footer
+*/
+
+footer {
+    background-color: #141414;
+    color: white;
+    padding: 50px 0;
+}
+
+.redes-sociales ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.redes-sociales ul li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+hr {
+    height: 25px;
+    background-color: #029cda;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+} 
+
+
+
+
